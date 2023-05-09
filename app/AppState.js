@@ -1,4 +1,4 @@
-import { Snack } from "./Models/Snack.js"
+import { Snack } from "./Models/SnackModel.js"
 import { Value } from "./Models/Value.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"

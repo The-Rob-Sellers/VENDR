@@ -5,19 +5,19 @@ import { setHTML } from "../Utils/Writer.js";
 
 
 //Private
-function _draw() {
-  let cardsTemplate = ''
-  appState.values.forEach(v => cardsTemplate += v.CardTemplate)
-  setHTML('app', /*html*/`
-  <div class="my-3">
-    <button class="btn btn-primary text-white elevation-2" onclick="app.valuesController.addValue()">Add Value</button>  
-    <button class="btn btn-warning text-white elevation-2" onclick="app.valuesController.clearAll()">Clear All</button>  
-    <div class="values d-flex flex-wrap my-3">
-      ${cardsTemplate}
-    </div>
-  </div>
-  `)
-}
+// function _draw() {
+//   let cardsTemplate = ''
+//   appState.values.forEach(v => cardsTemplate += v.CardTemplate)
+//   setHTML('app', /*html*/`
+//   <div class="my-3">
+//     <button class="btn btn-primary text-white elevation-2" onclick="app.valuesController.addValue()">Add Value</button>  
+//     <button class="btn btn-warning text-white elevation-2" onclick="app.valuesController.clearAll()">Clear All</button>  
+//     <div class="values d-flex flex-wrap my-3">
+//       ${cardsTemplate}
+//     </div>
+//   </div>
+//   `)
+// }
 
 //Public
 export class ValuesController {

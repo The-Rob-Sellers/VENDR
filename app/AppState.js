@@ -17,7 +17,8 @@ class AppState extends EventEmitter {
     new Snack({name: 'Item7', price: 3.50, imgUrl: 'https://www.pngall.com/wp-content/uploads/8/Sample-Watermark-Transparent.png'}),
     new Snack({name: 'Item8', price: 3.50, imgUrl: 'https://www.pngall.com/wp-content/uploads/8/Sample-Watermark-Transparent.png'}),
    ]
-moneyIn = 0
+
+moneyIn = 20.00
 }
 
 export const appState = new Proxy(new AppState(), {
